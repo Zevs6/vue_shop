@@ -23,6 +23,7 @@
             prefix-icon="el-icon-lock"
             type="password"
             v-model="loginForm.password"
+            @change="submitLoginForm"
           ></el-input>
         </el-form-item>
         <!-- 按钮区域 -->
