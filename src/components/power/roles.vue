@@ -10,7 +10,7 @@
         <!-- 卡片视图 -->
         <el-card class="box-card">
             <!-- 添加角色按钮区域 -->
-             <el-row>
+            <el-row>
                 <el-col>
                     <el-button type="primary" @click="addDialogVisible = true">添加角色</el-button>
                 </el-col>
@@ -63,7 +63,7 @@
         :visible.sync="addDialogVisible"
         width="60%"
         @close="DialogClosed('addFormRef')">
-       <el-form :model="addForm" :rules="addFormRules" ref="addFormRef" label-width="70px">
+       <el-form :model="addForm" :rules="addFormRules" ref="addFormRef" label-width="80px">
             <el-form-item label="角色名称" prop="roleName">
                 <el-input v-model="addForm.roleName" clearable></el-input>
             </el-form-item>
@@ -83,7 +83,7 @@
         :visible.sync="editDialogVisible"
         width="50%"
         @close="DialogClosed('editFormRef')">
-       <el-form :model="editForm" :rules="addFormRules" ref="editFormRef" label-width="70px">
+       <el-form :model="editForm" :rules="addFormRules" ref="editFormRef" label-width="80px">
             <el-form-item label="角色名称" prop="roleName">
                 <el-input v-model="editForm.roleName" clearable></el-input>
             </el-form-item>

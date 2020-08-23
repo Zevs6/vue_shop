@@ -6,6 +6,10 @@ import "./plugins/element.js";
 // 导入全局样式表
 import './assets/css/global.css';
 
+// 导入树形结构表格插件
+import ZkTable from 'vue-table-with-tree-grid'
+Vue.use(ZkTable)
+
 import axios from "axios";
 axios.defaults.baseURL = "http://127.0.0.1:8888/api/private/v1/";
 // 添加axios请求拦截器
