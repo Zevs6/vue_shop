@@ -238,7 +238,7 @@ export default {
       // 点击确认按钮提交分类添加
       addCate(){
         console.log(this.addCateForm);
-        // 表单预校验
+         // 表单预校验
            this.$refs.addCateFormRef.validate(valid => {
                 if (!valid) return this.$message.error('请填写分类名称！！')
                 // 可以发起数据添加的接口请求
@@ -327,7 +327,7 @@ export default {
 };
 </script>
 
-<style lang="less" >
+<style lang="less">
   .el-cascader-panel{
     height: 300px;
   }
