@@ -33,7 +33,7 @@ export default {
                 backgroundColor: '#E9EEF3'
               }
             }
-          },
+          }, 
           grid: {
             left: '3%',
             right: '4%',
